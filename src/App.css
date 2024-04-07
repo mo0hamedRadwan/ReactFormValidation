@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.center-form{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)), 
+              url('../public/img/background.jpeg');
+  background-size: cover;
+}
+
+.signUpForm, .signInForm{
+  width: 400px;
+  height: 605px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.form-control{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-control label{
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form-control input{
+  font-size: 1.2rem;
+  padding: 5px;
+  outline: none;
+  background: none;
+  border: 1px solid #555;
+  border-radius: 10px;
+}
+
+.form-control .input-error{
+  position: relative;
+  height: 13px;
+  font-size: 12px;
+  color: red;
+}
+
+.form-control .signupBtn,
+.form-control .signinBtn,
+.form-control button{
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  outline: none;
+  background: white;
+  border-radius: 25px;
+  border: 1px solid #555;
+  transition: 0.5s;
+}
+
+.form-control .signupBtn:hover,
+.form-control .signinBtn:hover,
+.form-control button:hover{
+  color: white;
+  background-color: rgb(255, 90, 214);
+  border: 1px solid white;
+}
